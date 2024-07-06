@@ -101,6 +101,9 @@ jobs:
           with:
             name: build-artifacts
 
+        - name: Restore dependencies
+          run: dotnet restore
+          
         - name: Package
           run: dotnet pack -c Release --no-build --output nupkgs
 
