@@ -33,6 +33,14 @@ jobs:
 
         - name: Build
           run: dotnet build -c Release
+          
+        - name: Upload build artifacts
+          uses: actions/upload-artifact@v3
+          with:
+            name: build-artifacts
+            path: |
+              **/bin/Release/
+              !**/*.pdb
       
     test:
       name: Test
@@ -41,6 +49,11 @@ jobs:
       steps:
         - name: Checkout code
           uses: actions/checkout@v4
+
+        - name: Download build artifacts
+          uses: actions/download-artifact@v3
+          with:
+            name: build-artifacts
 
         - name: Test
           run: dotnet test -c Release --no-build --verbosity normal --logger "trx;LogFileName=..\..\..\TestResults.trx"
@@ -62,7 +75,12 @@ jobs:
       steps:
         - name: Checkout code
           uses: actions/checkout@v4
-          
+
+        - name: Download build artifacts
+          uses: actions/download-artifact@v3
+          with:
+            name: build-artifacts
+
         - name: Package
           run: dotnet pack -c Release --no-build --output nupkgs
 
