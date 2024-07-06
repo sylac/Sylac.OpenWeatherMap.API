@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sylac.OpenWeatherMap.API", "Sylac.OpenWeatherMap.API\Sylac.OpenWeatherMap.API.csproj", "{FEF85A34-356F-49AE-99FD-B7A429A23F42}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{57EA0849-2DE5-468E-A3F6-749C54A7C8EE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sylac.OpenWeatherMap.API.UnitTests", "Tests\Sylac.OpenWeatherMap.API.UnitTests\Sylac.OpenWeatherMap.API.UnitTests.csproj", "{77849758-9380-4A70-80FD-E87CAE0AB92C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FEF85A34-356F-49AE-99FD-B7A429A23F42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEF85A34-356F-49AE-99FD-B7A429A23F42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEF85A34-356F-49AE-99FD-B7A429A23F42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEF85A34-356F-49AE-99FD-B7A429A23F42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77849758-9380-4A70-80FD-E87CAE0AB92C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77849758-9380-4A70-80FD-E87CAE0AB92C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77849758-9380-4A70-80FD-E87CAE0AB92C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77849758-9380-4A70-80FD-E87CAE0AB92C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{77849758-9380-4A70-80FD-E87CAE0AB92C} = {57EA0849-2DE5-468E-A3F6-749C54A7C8EE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6010391F-ADD1-4072-B424-47B5A4AB67F5}
+	EndGlobalSection
+EndGlobal
