@@ -10,10 +10,10 @@
     <Version>0.1.0</Version>
     <Authors>Sylac</Authors>
     <Description>OpenWeatherMap API client</Description>
+		<RepositoryUrl>https://github.com/sylac/Sylac.OpenWeatherMap.API</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <LangVersion>latest</LangVersion>
-    <PackageReadmeFile>../README.md</PackageReadmeFile>
-    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
