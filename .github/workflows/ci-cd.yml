@@ -39,6 +39,9 @@ jobs:
       runs-on: windows-latest
       needs: [setup, build]
       steps:
+        - name: Checkout code
+          uses: actions/checkout@v4
+
         - name: Test
           run: dotnet test -c Release --no-build --verbosity normal --logger "trx;LogFileName=..\..\..\TestResults.trx"
 
@@ -57,6 +60,9 @@ jobs:
       needs: [setup, build, test]
       if: startsWith(github.ref, 'refs/tags/release-v')
       steps:
+        - name: Checkout code
+          uses: actions/checkout@v4
+          
         - name: Package
           run: dotnet pack -c Release --no-build --output nupkgs
 
