@@ -43,7 +43,6 @@ jobs:
             name: build-artifacts
             path: |
               **/bin/Release/
-              !**/*.pdb
               **/obj/Release/
       
     test:
