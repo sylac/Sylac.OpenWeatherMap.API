@@ -44,6 +44,7 @@ jobs:
             path: |
               **/bin/Release/
               !**/*.pdb
+              **/obj/Release/
       
     test:
       name: Test
