@@ -12,7 +12,7 @@
     <Description>OpenWeatherMap API client</Description>
     <RepositoryType>git</RepositoryType>
     <LangVersion>latest</LangVersion>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageReadmeFile>../README.md</PackageReadmeFile>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
   </PropertyGroup>
 
